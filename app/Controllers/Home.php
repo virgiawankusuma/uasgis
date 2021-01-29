@@ -44,6 +44,7 @@ class Home extends BaseController
 
 	public function jalan()
 	{
+		// dd($this->M_jalan->findAll());
 		$data = [
 			'title' => 'Jalan desa | Home',
 			'site' => $this->site,

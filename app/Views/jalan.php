@@ -17,8 +17,8 @@
     // style
     var roads = {
         'color': 'red',
-        'dashArray': '7',
-        'weight': 5
+        'dashArray': '6',
+        'weight': 6
     }
     var vb = {
         'color': 'gray',
