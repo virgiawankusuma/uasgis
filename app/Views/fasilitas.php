@@ -1,6 +1,7 @@
 <?= $this->extend('layout/template'); ?>
 <?= $this->section('content'); ?>
 <div class="container-fluid">
+    <h1 class="h3 mb-2 text-gray-800">Fasilitas umum</h1>
     <div id="maps"></div>
 </div>
 <script>
@@ -14,14 +15,6 @@
         accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
     }).addTo(mymap);
     // style
-    var rt = {
-        'weight': 3
-    }
-    var roads = {
-        'color': 'red',
-        'dashArray': '7',
-        'weight': 5
-    }
     var vb = {
         'color': 'gray',
         'opacity': 1,
@@ -31,6 +24,7 @@
     }
 
     // get data
+
     // vb
     L.geoJSON({
         "type": "FeatureCollection",
@@ -38,43 +32,6 @@
     }, {
         style: vb
     }).addTo(mymap);
-
-
-    // rt
-    <?php foreach ($neighborhood_associations as $neighborhood_association => $rt) { ?>
-        L.geoJSON({
-            "type": "FeatureCollection",
-            "features": [<?= $rt->koordinat; ?>]
-        }, {
-            style: rt
-        }).addTo(mymap).on('click', function() {
-            Swal.fire({
-                title: '<span class="text-uppercase"><?= $rt->nama; ?></span>',
-                text: 'Modal with a custom image.',
-                imageUrl: '/img/<?= $rt->gambar; ?>',
-                imageHeight: 200,
-                imageAlt: 'Custom image',
-            })
-        });
-    <?php } ?>
-
-    // jalan
-    <?php foreach ($roads as $road => $r) { ?>
-        L.geoJSON({
-            "type": "FeatureCollection",
-            "features": [<?= $r->koordinat; ?>]
-        }, {
-            style: roads
-        }).addTo(mymap).on('click', function() {
-            Swal.fire({
-                title: '<span class="text-uppercase"><?= $r->nama; ?></span>',
-                text: 'Modal with a custom image.',
-                imageUrl: '/img/<?= $r->gambar; ?>',
-                imageHeight: 200,
-                imageAlt: 'Custom image',
-            })
-        });
-    <?php } ?>
 
     // fasilitas
     <?php foreach ($facilities as $facility => $f) { ?>

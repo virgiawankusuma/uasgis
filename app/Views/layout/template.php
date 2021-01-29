@@ -23,7 +23,7 @@
 </head>
 <style>
     #maps {
-        height: 570px;
+        height: 540px;
         /* width: 300px; */
     }
 </style>
@@ -79,6 +79,9 @@
 
     <!-- Custom scripts for all pages-->
     <script src="/sb-admin/js/sb-admin-2.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 
 </body>
 
