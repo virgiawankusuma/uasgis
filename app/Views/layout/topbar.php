@@ -6,40 +6,16 @@
     </button>
 
     <!-- Topbar Search -->
+
     <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" action="/cari" method="GET">
         <div class="input-group">
-            <input type="text" class="form-control bg-light small" placeholder="Telusuri batas, jalan, fasilitas umum desa ..." aria-label="Search" aria-describedby="basic-addon2" name="keyword">
+            <input type="text" class="form-control bg-light" placeholder="Telusuri batas RT, jalan, fasilitas umum desa ..." aria-label="Search" aria-describedby="basic-addon2" name="keyword">
             <div class="input-group-append">
-                <button class="btn btn-success" type="submit">
+                <button class="btn btn-warning" type="submit">
                     <i class="fas fa-search fa-sm"></i>
                 </button>
             </div>
         </div>
     </form>
-
-    <!-- Topbar Navbar -->
-    <ul class="navbar-nav ml-auto">
-
-        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-        <li class="nav-item dropdown no-arrow d-sm-none">
-            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-search fa-fw"></i>
-            </a>
-            <!-- Dropdown - Messages -->
-            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                <form class="form-inline mr-auto w-100 navbar-search">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary" type="button">
-                                <i class="fas fa-search fa-sm"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </li>
-
-    </ul>
 
 </nav>

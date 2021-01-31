@@ -47,10 +47,10 @@
         }).addTo(mymap).on('click', function() {
             Swal.fire({
                 title: '<span class="text-uppercase"><?= $rt->nama; ?></span>',
-                text: 'Modal with a custom image.',
-                imageUrl: '/img/<?= $rt->gambar; ?>',
+                html: '<p class="my-1"><?= $rt->jumlah; ?> Jiwa</p><p class="small my-1"><?= $rt->alamat; ?></p>',
+                imageUrl: '<?= $rt->gambar; ?>',
                 imageHeight: 200,
-                imageAlt: 'Custom image',
+                imageAlt: '<?= $rt->nama; ?>',
             })
         });
     <?php } ?>

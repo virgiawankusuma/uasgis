@@ -20,7 +20,7 @@
     var roads = {
         'color': 'red',
         'dashArray': '7',
-        'weight': 5
+        'weight': 6
     }
     var vb = {
         'color': 'gray',
@@ -50,10 +50,10 @@
         }).addTo(mymap).on('click', function() {
             Swal.fire({
                 title: '<span class="text-uppercase"><?= $rt->nama; ?></span>',
-                text: 'Modal with a custom image.',
-                imageUrl: '/img/<?= $rt->gambar; ?>',
+                html: '<p class="my-1"><?= $rt->jumlah; ?> Jiwa</p><p class="small my-1"><?= $rt->alamat; ?></p>',
+                imageUrl: '<?= $rt->gambar; ?>',
                 imageHeight: 200,
-                imageAlt: 'Custom image',
+                imageAlt: '<?= $rt->nama; ?>',
             })
         });
     <?php } ?>
@@ -67,11 +67,7 @@
             style: roads
         }).addTo(mymap).on('click', function() {
             Swal.fire({
-                title: '<span class="text-uppercase"><?= $r->nama; ?></span>',
-                text: 'Modal with a custom image.',
-                imageUrl: '/img/<?= $r->gambar; ?>',
-                imageHeight: 200,
-                imageAlt: 'Custom image',
+                title: '<span class="text-capitalize"><?= $r->nama; ?></span>'
             })
         });
     <?php } ?>
@@ -80,11 +76,11 @@
     <?php foreach ($facilities as $facility => $f) { ?>
         L.marker([<?= $f->koordinat; ?>]).addTo(mymap).on('click', function() {
             Swal.fire({
-                title: '<span class="text-uppercase"><?= $f->nama; ?></span>',
-                html: '<span class = "small" > <?= $f->deskripsi; ?> </span>',
+                title: '<span class="text-capitalize"><?= $f->nama; ?></span>',
+                html: '<a href="/cari?keyword=<?= $f->jenis; ?>" class="text-capitalize h5 text-primary"><?= $f->jenis; ?></a><p class="small my-1"><?= $f->alamat; ?></p> <p class="small my-1"><?= $f->no_telp; ?></p>',
                 imageUrl: '<?= $f->gambar; ?>',
                 imageHeight: 200,
-                imageAlt: 'Custom image',
+                imageAlt: '<?= $f->nama; ?>',
             })
         });
     <?php } ?>

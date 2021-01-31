@@ -24,9 +24,10 @@ class Home extends BaseController
 			'title' => 'Peta Desa Kuwasen | Home',
 			'site' => $this->site,
 			'vb' => $this->vb,
-			'neighborhood_associations' => $this->M_batas->where(['jenis' => 'rt'])->findAll(),
+			'neighborhood_associations' => $this->M_batas->findAll(),
 			'roads' => $this->M_jalan->findAll(),
 			'facilities' => $this->M_fasilitas->findAll(),
+			'getsegment' => $this->request->uri->getSegment(1)
 		];
 		return view('index', $data);
 	}
@@ -37,7 +38,8 @@ class Home extends BaseController
 			'title' => 'Batas RT | Home',
 			'site' => $this->site,
 			'vb' => $this->vb,
-			'neighborhood_associations' => $this->M_batas->where(['jenis' => 'rt'])->findAll()
+			'neighborhood_associations' => $this->M_batas->findAll(),
+			'getsegment' => $this->request->uri->getSegment(1)
 		];
 		return view('rt', $data);
 	}
@@ -49,7 +51,8 @@ class Home extends BaseController
 			'title' => 'Jalan desa | Home',
 			'site' => $this->site,
 			'vb' => $this->vb,
-			'roads' => $this->M_jalan->findAll()
+			'roads' => $this->M_jalan->findAll(),
+			'getsegment' => $this->request->uri->getSegment(1)
 		];
 		return view('jalan', $data);
 	}
@@ -60,7 +63,8 @@ class Home extends BaseController
 			'title' => 'Fasilitas umum desa | Home',
 			'site' => $this->site,
 			'vb' => $this->vb,
-			'facilities' => $this->M_fasilitas->findAll()
+			'facilities' => $this->M_fasilitas->findAll(),
+			'getsegment' => $this->request->uri->getSegment(1)
 		];
 		return view('fasilitas', $data);
 	}
@@ -76,17 +80,9 @@ class Home extends BaseController
 			'vb' => $this->vb,
 			'neighborhood_associations' => $this->M_batas->search($keyword)->findAll(),
 			'roads' => $this->M_jalan->search($keyword)->findAll(),
-			'facilities' => $this->M_fasilitas->search($keyword)->findAll()
+			'facilities' => $this->M_fasilitas->search($keyword)->findAll(),
+			'getsegment' => $this->request->uri->getSegment(1)
 		];
 		return view('cari', $data);
-	}
-
-	public function index2()
-	{
-		$data = [
-			'title' => 'Peta Desa Kuwasen | Home',
-			'site' => $this->site
-		];
-		return view('index2', $data);
 	}
 }

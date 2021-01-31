@@ -1,7 +1,7 @@
 <?= $this->extend('layout/template'); ?>
 <?= $this->section('content'); ?>
 <div class="container-fluid">
-    <h1 class="h3 mb-2 text-gray-800">Fasilitas umum</h1>
+    <h1 class="h3 mb-2 text-gray-800">Fasilitas Umum</h1>
     <div id="maps"></div>
 </div>
 <script>
@@ -37,11 +37,11 @@
     <?php foreach ($facilities as $facility => $f) { ?>
         L.marker([<?= $f->koordinat; ?>]).addTo(mymap).on('click', function() {
             Swal.fire({
-                title: '<span class="text-uppercase"><?= $f->nama; ?></span>',
-                html: '<span class = "small" > <?= $f->deskripsi; ?> </span>',
+                title: '<span class="text-capitalize"><?= $f->nama; ?></span>',
+                html: '<a href="/cari?keyword=<?= $f->jenis; ?>" class="text-capitalize h5 text-primary"><?= $f->jenis; ?></a><p class="small my-1"><?= $f->alamat; ?></p> <p class="small my-1"><?= $f->no_telp; ?></p>',
                 imageUrl: '<?= $f->gambar; ?>',
                 imageHeight: 200,
-                imageAlt: 'Custom image',
+                imageAlt: '<?= $f->nama; ?>',
             })
         });
     <?php } ?>

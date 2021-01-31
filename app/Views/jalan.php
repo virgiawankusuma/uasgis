@@ -1,7 +1,7 @@
 <?= $this->extend('layout/template'); ?>
 <?= $this->section('content'); ?>
 <div class="container-fluid">
-    <h1 class="h3 mb-2 text-gray-800">Jalan desa</h1>
+    <h1 class="h3 mb-2 text-gray-800">Jalan Desa</h1>
     <div id="maps"></div>
 </div>
 <script>
@@ -47,11 +47,7 @@
             style: roads
         }).addTo(mymap).on('click', function() {
             Swal.fire({
-                title: '<span class="text-uppercase"><?= $r->nama; ?></span>',
-                text: 'Modal with a custom image.',
-                imageUrl: '/img/<?= $r->gambar; ?>',
-                imageHeight: 200,
-                imageAlt: 'Custom image',
+                title: '<span class="text-capitalize"><?= $r->nama; ?></span>'
             })
         });
     <?php } ?>
