@@ -23,7 +23,8 @@
 </head>
 <style>
     #maps {
-        height: 440px;
+        /* height: 440px; */
+        height: 570px;
         /* width: 300px; */
     }
 </style>

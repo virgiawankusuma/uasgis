@@ -67,7 +67,8 @@
             style: roads
         }).addTo(mymap).on('click', function() {
             Swal.fire({
-                title: '<span class="text-capitalize"><?= $r->nama; ?></span>'
+                title: '<span class="text-capitalize"><?= $r->nama; ?></span><p>',
+                html: '<a href="/cari?keyword=<?= $r->jenis; ?>" class="text-capitalize h5 text-primary"><?= $r->jenis; ?></a>'
             })
         });
     <?php } ?>
@@ -77,7 +78,7 @@
         L.marker([<?= $f->koordinat; ?>]).addTo(mymap).on('click', function() {
             Swal.fire({
                 title: '<span class="text-capitalize"><?= $f->nama; ?></span>',
-                html: '<a href="/cari?keyword=<?= $f->jenis; ?>" class="text-capitalize h5 text-primary"><?= $f->jenis; ?></a><p class="small my-1"><?= $f->alamat; ?></p> <p class="small my-1"><?= $f->no_telp; ?></p>',
+                html: '<p class="small my-1"><?= $f->alamat; ?></p> <p class="small my-1"><?= $f->no_telp; ?></p>',
                 imageUrl: '<?= $f->gambar; ?>',
                 imageHeight: 200,
                 imageAlt: '<?= $f->nama; ?>',

@@ -12,7 +12,7 @@ class M_batas extends Model
 
     public function search($keyword)
     {
-        return $this->like('nama', $keyword)->orLike('jenis', $keyword);
+        return $this->like('nama', $keyword);
     }
 }
 // $builder->like('title', 'match');

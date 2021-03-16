@@ -1,0 +1,74 @@
+CRITICAL - 2021-02-01 04:49:01 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Model.php(450): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\uasgis\app\Controllers\Home.php(27): CodeIgniter\Model->findAll()
+#4 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\uasgis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-02-01 04:49:01 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\uasgis\app\Views\errors\html\error_exception.php:100
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 100, Array)
+#1 C:\xampp\htdocs\uasgis\app\Views\errors\html\error_exception.php(100): print_r(Object(App\Controllers\Home), true)
+#2 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Debug\Exceptions.php(308): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Debug\Exceptions.php(174): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-01 04:54:48 --> Unknown column 'jenis' in 'where clause'
+#0 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Model.php(450): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\uasgis\app\Controllers\Home.php(81): CodeIgniter\Model->findAll()
+#6 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->cari()
+#7 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\uasgis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-02-01 04:56:34 --> Unknown column 'jenis' in 'where clause'
+#0 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Model.php(450): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\uasgis\app\Controllers\Home.php(81): CodeIgniter\Model->findAll()
+#6 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->cari()
+#7 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\uasgis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-02-01 04:57:32 --> Unknown column 'jenis' in 'where clause'
+#0 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Model.php(450): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\uasgis\app\Controllers\Home.php(81): CodeIgniter\Model->findAll()
+#6 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->cari()
+#7 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\uasgis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-02-01 04:57:40 --> Unknown column 'jenis' in 'where clause'
+#0 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Model.php(450): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\uasgis\app\Controllers\Home.php(81): CodeIgniter\Model->findAll()
+#6 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->cari()
+#7 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\uasgis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#11 {main}

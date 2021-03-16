@@ -47,7 +47,8 @@
             style: roads
         }).addTo(mymap).on('click', function() {
             Swal.fire({
-                title: '<span class="text-capitalize"><?= $r->nama; ?></span>'
+                title: '<span class="text-capitalize"><?= $r->nama; ?></span>',
+                html: '<a href="/cari?keyword=<?= $r->jenis; ?>" class="text-capitalize h5 text-primary"><?= $r->jenis; ?></a>'
             })
         });
     <?php } ?>

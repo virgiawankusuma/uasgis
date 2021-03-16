@@ -1,0 +1,33 @@
+CRITICAL - 2021-01-29 23:45:49 --> Undefined property: stdClass::$deskripsi
+#0 C:\xampp\htdocs\uasgis\app\Views\cari.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 85, Array)
+#1 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('cari', Array, true)
+#3 C:\xampp\htdocs\uasgis\app\Controllers\Home.php(81): view('cari', Array)
+#4 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->cari()
+#5 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\uasgis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-01-29 23:46:18 --> Undefined property: stdClass::$deskripsi
+#0 C:\xampp\htdocs\uasgis\app\Views\cari.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 85, Array)
+#1 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('cari', Array, true)
+#3 C:\xampp\htdocs\uasgis\app\Controllers\Home.php(81): view('cari', Array)
+#4 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->cari()
+#5 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\uasgis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-01-29 23:46:27 --> Undefined property: stdClass::$deskripsi
+#0 C:\xampp\htdocs\uasgis\app\Views\cari.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 85, Array)
+#1 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('cari', Array, true)
+#3 C:\xampp\htdocs\uasgis\app\Controllers\Home.php(81): view('cari', Array)
+#4 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->cari()
+#5 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\uasgis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\uasgis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
